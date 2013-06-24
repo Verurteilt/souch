@@ -22,7 +22,6 @@ def send(options, data, cb=""):
         url = "http://%s:%s" % (options['host'], str(options['port']))
         url += "%s" % options['path']
         if data is not None:
-            data['type'] = options['type']
             request = urllib2.Request(url, data=json.dumps(data))
         else:
             request = urllib2.Request(url)
