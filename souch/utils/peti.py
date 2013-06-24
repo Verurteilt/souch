@@ -38,9 +38,12 @@ def send(options, data, cb=""):
                     results.update(json.loads(get_json))
         except:
             des = urllib2.urlopen(url)
-            for content in des:
-                for_design += content
-            results.update(json.loads(for_design))
+            try:
+                for content in des:
+                    for_design += content
+                results.update(json.loads(for_design))
+            except:
+                results = json.loads(content)
         cb(results)
         return results
     except Exception as err:
