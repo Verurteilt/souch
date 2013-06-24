@@ -1,0 +1,7 @@
+*pyc
+dist
+setup.py
+README.txt
+MANIFEST
+*in
+CHANGES.txt
