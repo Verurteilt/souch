@@ -1,7 +1,7 @@
 #Py-Souch
 
 
-Simple client to handle CouchDB database form python :D
+Simple client to handle CouchDB database from python :D
 
 It's the brother of souch for Node.js :D [github](https://github.com/iosamuel/souch) [npm](https://npmjs.org/package/souch)
 
